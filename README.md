@@ -39,9 +39,10 @@ I won't mention every detail of the system (you'll need to read the code), but I
 
 ## Dev environment setup
 
+Download and set up GCP CLI utils locally, including `gsutil` (it comes separately).
+
 When doing development, I'd usually have the following open:
 
-* Download and set up GCP CLI utils locally, including `gsutil` (it comes separately).
 * `src/TaposcopeWindows` (the server) opened in Visual Studio
 * `src` opened in VS Code. The individual sub-folders of `src` aren't really designed to be opened successfully in VS Code - the main typescript and Jest config live at the top level of `src`.
 * That said, to run e.g. `dashboard`, you'd need to `cd` into dashboard, run `npm install` and `npm start`. You won't be able to run anything successfully in NPM from top-level `src` folder.
