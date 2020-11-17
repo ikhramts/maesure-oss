@@ -1,0 +1,12 @@
+{
+    "general-comment": "This package.json will be included in the published Electron app and is not meant for development.",
+    
+    "name": "Maesure",
+    "version": "__VERSION__",
+    "description": "Maesure desktop client",
+    "main": "./main.bundle.js",
+    "author": "Ordered Logic Inc.",
+    "license": "Copyright 2019 Ordered Logic Inc.",
+    "private": true
+  }
+  

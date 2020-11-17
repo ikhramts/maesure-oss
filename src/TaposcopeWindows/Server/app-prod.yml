@@ -1,0 +1,13 @@
+﻿runtime: aspnetcore
+env: flex
+service: default
+
+beta_settings:
+  cloud_sql_instances: "taposcope-prod:us-central1:taposcope-prod=tcp:5432"
+
+automatic_scaling:
+  min_num_instances: 1
+  max_num_instances: 2
+
+env_variables:
+  POSTGRES_CONNECTION: "Uid=svc_taposcope;Pwd=lgUqHgUgBk77;Host=35.193.92.33;Database=postgres;SSL Mode=Require;Trust Server Certificate=true"

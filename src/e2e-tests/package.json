@@ -1,0 +1,30 @@
+{
+    "version": "1.0.1",
+    "private": true,
+    "scripts": {
+        "jest-clear-cache": "jest --clearCache",
+
+        "test": "jest --maxWorkers=10",
+        "test:account-management": "jest -t \"Account management tests\"",
+        "test:history-page": "jest -t \"History page\"",
+        "test:past-gap-backfill-short": "jest -t \"Past gap backfill - short gap\"",
+        "test:popup-behavior-basic": "jest -t \"Popup behavior - basic tests\"",
+        "test:popup-behaviour-popup-precedence": "jest -t \"Popup behavior - popup precedence\"",
+        "test:popup-behaviour-unexpected-popups": "jest -t \"Popup behavior - no unexpected popups\"",
+        "test:popup-dropdown-behavior": "jest -t \"Popup dropdown behavior\"",
+        "test:try-out-maesure": "jest -t \"Try out maesure\"",
+
+        "test:not-account-tests": "jest --maxWorkers=10 --testPathIgnorePatterns=\".*account-management.*\""
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "@types/puppeteer": "2.0.0",
+        "jasmine-fail-fast": "2.0.0",
+        "jest": "24.8.0",
+        "puppeteer": "2.0.0",
+        "ts-jest": "24.0.2",
+        "webpack": "^4.28.4",
+        "webpack-dev-server": "3.7.2"
+    },
+    "dependencies": {}
+}

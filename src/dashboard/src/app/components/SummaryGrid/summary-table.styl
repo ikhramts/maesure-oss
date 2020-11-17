@@ -1,0 +1,101 @@
+name-col-width = 250px
+name-cell-padding-left = 0
+name-cell-width = name-col-width - name-cell-padding-left
+
+new-activity-group-input-width = name-col-width + 50px
+
+data-col-width = 80px
+data-cell-padding-right = 25px
+
+header-cell-height = 42px
+
+.summaryTable
+  width: 100%
+
+  td
+    &.activityName
+      display: flex
+      //width: name-cell-width
+      //max-width: name-cell-width
+      padding-left: 0
+      vertical-align: middle
+      
+      div
+        display: flex
+        align-items: center
+
+      &.newActivityGroupInput
+        width: new-activity-group-input-width
+
+      .spacer
+        flex: 0 0 auto
+        width: 10px
+
+      .expandToggle
+        flex: 0 0 auto
+        width: 25px
+
+      .cellContents
+        flex: 1 1 auto
+        padding-left: 5px
+        height: 100%
+
+    &.controls
+      width: 110px
+      min-width: 80px
+      
+  th
+    &.activityName
+      padding-left: 57px
+
+    &.summaryColumn
+      text-align: center
+
+  .summaryColumn
+    width: data-col-width
+    min-width: data-col-width
+
+  td.summaryColumn
+    text-align: right
+    padding-right: data-cell-padding-right
+
+  .zero
+    color: #ccc
+
+  .dragHandle
+    width: 27px
+    padding-left: 2px
+    font-size: 140%
+    letter-spacing: -2px
+    color: #ccc
+    text-align: center
+
+    span
+      padding-left: 5px
+      text-align: center
+      font-size: 20px
+
+    i.anticon
+      svg
+        font-size: 20px
+
+    &.enabled
+      cursor: move
+
+  .doesNotAcceptDrop
+    color: #ccc
+
+  .isDraggedOver
+    background: #ddd
+
+    span 
+      pointer-events: none
+
+.newActivityGroupInputForm
+  padding-bottom: 5px
+  
+  input[type=text]
+    margin-bottom: 10px
+
+  button
+    margin-right: 10px

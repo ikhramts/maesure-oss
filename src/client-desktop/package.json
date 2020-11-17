@@ -1,0 +1,44 @@
+{
+  "name": "client-desktop",
+  "version": "1000.0.0",
+  "description": "Maesure desktop client",
+  "main": "./build/main.bundle.js",
+  "author": "Ordered Logic Inc.",
+  "license": "Copyright 2019 Ordered Logic Inc.",
+  "private": true,
+  "scripts": {
+    "start": "electron ./build/main.bundle.js",
+    "dev": "rimraf build && webpack --watch --config ./webpack.dev.js --progress --colors",
+    "prod": "rimraf build && webpack --config ./webpack.prod.js --progress --colors",
+    "electron-rebuild": "electron-rebuild",
+    "-": "------------- Production publishing steps, used in publish.ps1 -----------------",
+    "build-prod": "rimraf build && webpack --config ./webpack.prod.js --progress --colors",
+    "package": "rimraf dist && electron-packager ./build Maesure --platform=win32 --arch=x64 --out=dist --electron-version=6.0.7 --icon=./src/main/assets/icon.ico"
+  },
+  "dependencies": {
+    "axios": "0.19.0",
+    "electron-is-dev": "1.1.0",
+    "electron-log": "3.0.8",
+    "electron-squirrel-startup": "^1.0.0",
+    "jwt-decode": "2.2.0",
+    "keytar": "5.0.0-beta.0",
+    "request": "2.88.0",
+    "system-sleep": "1.3.6",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "6.0.0-beta.44",
+    "@electron-forge/maker-deb": "6.0.0-beta.44",
+    "@electron-forge/maker-rpm": "6.0.0-beta.44",
+    "@electron-forge/maker-squirrel": "6.0.0-beta.44",
+    "@electron-forge/maker-zip": "6.0.0-beta.44",
+    "@types/jwt-decode": "2.2.1",
+    "@types/request": "2.47.0",
+    "electron": "6.0.7",
+    "electron-packager": "14.0.5",
+    "electron-rebuild": "1.8.6",
+    "electron-winstaller": "4.0.0",
+    "rimraf": "3.0.0"
+  }
+}

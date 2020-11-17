@@ -1,0 +1,18 @@
+{
+  "version": "1.0.1",
+  "private": true,
+  "homepage": "https://rokoroku.github.io/react-redux-typescript-boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --hot --progress --color --port 4000",
+    "build:prod": "rimraf build && webpack -p --progress --colors --env prod",
+    "build:staging": "rimraf build && webpack -p --progress --colors --env staging",
+    "prettier": "prettier --write \"src/**/*.{ts,tsx,css}\""
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.28.4",
+    "webpack-dev-server": "3.7.2"
+  },
+  "dependencies": {}
+}

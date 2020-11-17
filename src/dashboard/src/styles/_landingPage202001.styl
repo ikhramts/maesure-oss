@@ -1,0 +1,315 @@
+landing-bg-blue = lighten(#e6f7ff, 50%)//#e6f7ff
+
+.landingPage202001
+    width: 100%
+
+    // ============= General styles =============
+    h1
+        font-size: 70px
+        color: color-default
+
+        @media mq-mobile
+            font-size: 49px
+    
+    h2
+        font-weight: normal
+        color: #888
+        font-size: 30px
+
+        @media mq-mobile
+            font-size: 25px
+
+    h3
+        color: color-default
+        font-weight: 600
+        font-size: 30px
+
+    // ============= Specific sections =============
+    .landingMain
+        width: 100%
+        padding-bottom: 100px
+        background: linear-gradient(#ffffff, #fff)
+
+    .tryIt
+        margin-top: -35px
+        text-align: center
+        font-weight: 400
+        line-height: 1.2
+
+        i
+            svg 
+                font-size: 15px
+
+    .landingTitle
+        margin: 100px 0 10px 0
+        text-align: center
+
+        h1
+            margin: 0 0 10px 0
+
+            @media mq-mobile
+                font-size: 35px
+
+    .landingSubtitle
+        text-align: center
+
+        h2
+            margin-top: 10px
+
+            .configurable
+                display: inline-block
+                position: relative
+                border-bottom: 2px solid
+                border-bottom-color: color-primary
+                font-size: 30px
+                font-weight: normal
+
+                @media mq-mobile
+                    font-size: 25px
+
+                .configurableArrowAndText
+                    display: block
+                    position: absolute
+                    top: 40px
+                    left: 50%
+                    max-width: 200px
+                    transform: translate(-50%, 0)
+                    padding: 0
+                    color: color-primary
+                    text-align: center
+                    font-size: 25px
+                    font-weight: normal
+                    line-height: 0.9
+                    z-index: 9999
+
+                    @media mq-mobile
+                        font-size: 20px
+                        top: 37px
+
+
+                    i.anticon svg
+                        font-size: 20px
+
+                        @media mq-mobile
+                            font-size: 17px
+
+    .heroImage
+        max-width: 850px
+        margin: 100px auto 0 auto
+        padding: 0 10px
+
+        img
+            border-radius: 20px
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2)
+            width: 100%
+
+    .supportingBenefits
+        width: 100%
+        padding: 150px 20px 80px 20px
+        //background: #0050b3
+        color: color-default
+        text-align: center
+
+        @media mq-mobile
+            padding-top: 50px
+
+        h1
+            margin: 0 0 10px 0
+
+        h2
+            margin-top: 0
+            margin-bottom: 30px
+
+        .supportingBenefitsList
+            display: flex
+            width: 100%
+            max-width: 812px
+            margin: 0 auto 20px auto
+            flex-wrap: wrap
+            justify-content: space-between
+            align-items: center
+
+            @media screen and (max-width: 760px)
+                justify-content: space-around
+
+                .benefit
+                    margin-left: 0
+                    margin-right: 0
+
+        .benefit
+            flex: 0 0 auto
+            //width: 350px
+            margin: 20px 20px 
+
+            &:first-of-type
+                margin-left: 0
+
+            &:last-of-type
+                margin-right: 0
+
+            &.wideBenefit
+                //width: 860px
+                max-width: 100%
+
+            p
+                margin-top: -5px
+                margin-bottom: 2em
+
+            .benefitImage
+                max-width: 100%
+
+                img
+                    max-width: 100%
+                    border-radius: 20px
+                    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2)
+
+    .pricingSection
+        padding: 140px 10px 160px 10px
+        text-align: center
+        //background: linear-gradient(#eee, #dcdcdc)
+        background: white
+
+        @media mq-mobile
+            padding-top: 40px
+
+        h1
+            margin: 0 0 50px 0
+
+    .pricingBlocks
+        display: flex
+        max-width: 900px
+        margin: 0 auto
+        flex-wrap: wrap
+        justify-content: space-around
+
+        .pricingBlock
+            flex: 0 0 auto
+            width: 350px
+            margin: 20px 30px 120px 30px
+            //border: 1px solid #ccc
+            //border-radius: 20px
+            //box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+            text-align: center
+            background: white
+
+            h3
+                margin-top: 0
+                margin-bottom: 40px
+
+            .price
+                margin: 0
+                font-family: font-header
+                font-weight: normal
+                color: color-primary
+                font-size: 30px
+
+                .currency
+                    position: relative
+                    top: -9px
+
+            .planDescription
+                margin: 0
+                color: color-default
+            
+            .then
+                margin: 23px 0 15px 0
+                color: color-default
+
+            .workInProgress
+                margin-top: 100px
+
+                @media mq-mobile
+                    margin-top: 30px
+
+            .callToActionContainer
+                margin-top: 40px
+                
+                .callToAction
+                    margin: 0
+                    font-family: font-header
+                    font-weight: 600
+                    padding: 10px 20px
+                    height: 50px
+                    //background: color-success
+                    color: color-default
+                    border-color: color-default
+
+                    &:hover, &:active
+                        color: color-primary
+                        border-color: color-primary
+
+                    span 
+                        font-size: 25px
+                        line-height: 1
+
+    .whosBehindMaesure
+        padding: 0 20px
+        margin: 100px auto 0 auto
+        text-align: center
+
+        @media mq-mobile
+            margin-top: 0
+
+        p
+            max-width: 550 px
+            margin: 30px auto
+            text-align: left
+
+        h1
+            font-size: 70px
+
+        .myPhoto
+            max-width: 400px
+            margin: 40px auto 0 auto
+            text-align: center
+            
+            img
+                width: 100%
+                border-radius: 20px
+                border: none
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.2)
+
+
+        
+
+
+.landing-section-border
+    margin: -5px 0
+
+    &.white
+        color: #fff
+
+    &.blue
+        color: landing-bg-blue
+
+    &.darkblue
+        color: landing-bg-blue
+
+    &.gray
+        color: #eee
+
+    &.darkergray
+        color: #cbcbcb
+
+    &.bg-gray
+        background: #eee
+
+    &.bg-white
+        background: #fff
+
+    &.landing-section-border-fix-1px
+        position: relative
+        z-index:-1
+        margin-top: -1px
+
+    &.landing-section-border-fix-7px 
+        @media mq-mobile
+            position: relative
+            z-index:-1
+            margin-top: -7px
+
+
+
+
+
+

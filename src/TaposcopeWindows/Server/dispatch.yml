@@ -1,0 +1,6 @@
+﻿dispatch:
+    - url: "maesure.com/*"
+      service: default
+
+    - url: "staging.maesure.com/*"
+      service: staging

@@ -1,0 +1,11 @@
+export { AccountSettingsPage } from './AccountSettingsPage'
+export { AppsPage } from './AppsPage'
+export { ContactPage } from './ContactPage'
+export { CreateAccountPage } from './CreateAccountPage'
+export { EnterPaymentPage } from './EnterPaymentPage'
+export { LandingPage2 } from "./LandingPage2"
+export { LandingPage202001 } from './LandingPage202001'
+export { PrivacyPolicyPage } from './PrivacyPolicyPage'
+export { ResetPasswordPage } from './ResetPasswordPage'
+export { TermsAndConditionsPage } from './TermsAndConditionsPage'
+export { ShuttingDownPage } from './ShuttingDownPage'

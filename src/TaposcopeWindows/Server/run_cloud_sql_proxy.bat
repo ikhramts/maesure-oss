@@ -1,0 +1,1 @@
+start "" "../../../../Tools/cloud_sql_proxy.exe" "-instances=taposcope-prod:us-central1:taposcope-prod=tcp:5432"

@@ -1,0 +1,102 @@
+table.timeLogEntryTable
+
+  .fromDate
+    width: 120px
+    min-width: 120px
+    max-width: 120px
+    text-align: center
+
+    .ant-calendar-picker
+      width: 125px
+      left: 1px
+
+  .fromTime
+    width: 85px
+    min-width: 85px
+    text-align: center
+
+    .timeInput
+      left: 3px
+      width: 68px
+
+  .toTime
+    width: 85px
+    text-align: center
+
+    .timeInput
+      left: 3px
+      width: 68px
+
+  .timeBlockLength
+    width: 100px
+    text-align: center
+
+    &.inTimeLogEntryInput
+      padding-top: 5px
+
+  .entryText
+    text-align: left 
+
+    &.cellContents.inTimeLogEntryInput
+      padding-top: 1px
+
+    .ant-select
+      width: 240px
+      left: -12px
+      margin-right: 0
+
+      .ant-input
+        padding-top: 3px
+
+    button
+      margin-right: 0
+      padding-top: 5px
+      height: 32px
+      transition: none
+
+      &.submitting
+        transition: none
+
+    button.saveButton
+      margin-right: 10px
+
+    .discardButton
+      margin-left: 61px
+
+  th.entryText // Just the colum header
+    display: flex
+    flex-wrap: nowrap
+
+    .headerText
+      flex: 1 0 auto
+
+    .actions
+      flex: 0 0 auto
+      //width: 100px
+
+      a
+        display: inline-block
+        margin-right: 12px
+
+        &.addItem
+          margin-right: 20px
+
+      span
+        display: inline-block
+        color: color-fontgray
+        margin-right: 12px
+
+  .controls
+    width: 65px
+    text-align: right
+
+    .downloadLink
+      margin-right: 10px
+
+  .controls.inTimeLogEntryInput
+    padding-top: 5px
+
+  .notices
+    padding: 5px 10px
+    p
+      margin: 0

@@ -1,0 +1,25 @@
+{ // For Jest, VS Code, and other tools. Builds use tsconfig.json in the project dirs.
+  "compilerOptions": {
+    "sourceMap": true,
+    "target": "es5",
+    "jsx": "react",
+    "module": "es6",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "declaration": false,
+    "removeComments": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "strict": true,
+    "outDir": "build",
+    "lib": ["es6", "es7", "dom"],
+    "baseUrl": ".",
+    "paths": {
+      "app/*": ["dashboard/src/app/*"],
+      "client/*": ["client-desktop/src/*"],
+      "e2e/*": ["e2e-tests/*"],
+      "shared/*": ["shared/*"]
+    }
+  },
+  "exclude": ["build", "node_modules"]
+}

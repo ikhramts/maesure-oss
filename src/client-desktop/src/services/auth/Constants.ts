@@ -1,0 +1,7 @@
+export const IPC_CHANNEL_REQUEST_ACCESS_TOKEN = 'access-token-request'
+export const IPC_CHANNEL_REPLY_ACCESS_TOKEN = 'access-token-reply'
+export const IPC_CHANNEL_REQUEST_LOGIN = 'login-reuqest'
+export const IPC_CHANNEL_REPLY_LOGIN = 'login-reply'
+export const IPC_CHANNEL_REQUEST_LOGOUT = 'logout-reuqest'
+export const IPC_CHANNEL_REPLY_LOGOUT = 'logout-reply'
+export const IPC_CHANNEL_UPDATE_LOGIN_STATE = 'login-state-update'

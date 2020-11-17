@@ -1,0 +1,39 @@
+* Poll server for updates - use own client id
+* Settings - client id
+* Present options to the user, collect result
+* Send result to the server
+
+
+
+Need:
+
+* ITaposcopeApiClient (contains only stateless functions) - start with mock
+    - register device
+    - get scheduled survey
+    - submit survey results
+
+    -> FakeTaposcopeApiClient - can set the schedule, to be implemented first
+    -> TaposcopeApiClient - real requests
+
+* Orchestrator
+    - Start itself
+    - Register self with the server if needed
+    - Poll the API - randomize the interval
+    - Pop up the choices to the user
+    - Send results to the server
+
+* ClientConfig
+    - ClientConfig object
+    - IClientConfigLoader - loads the config from $APP_DATA/.taposcope/config.yaml (? - or .json?)
+
+* Messages
+    - scheduled survey model
+    - scheduled survey result
+    - surveyChoice
+        - number
+        - color
+        - text
+
+* MainWindow
+    - render the survey and pass the result to the orchestrator
+    - render based on the survey choices

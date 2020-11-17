@@ -1,0 +1,109 @@
+.timeTrackerResults
+    max-width: 920px
+    margin: 0 auto
+    animation: fadein 0.5s
+
+    div
+        .inputRow
+            .ant-select.selectGroupBy
+                width: 100px
+                margin-left: 10px
+                margin-right: 40px
+                color: color-default
+
+            .ant-calendar-picker
+                max-width: 280px
+                margin-left: 10px
+                margin-right: 10px
+
+.weeklyPeriodPicker
+    .ant-calendar-picker
+        width: 147px
+
+.mobileWarning
+    display: none
+
+    @media mq-mobile
+        display: block
+        text-align: center
+        margin-top: -35px
+        overflow: hidden
+
+.notificationsPermissionRequest
+    text-align: center
+    margin-top: -35px
+    overflow: hidden
+
+    @media mq-mobile
+        display: none
+
+.resultsHeaderNav
+    margin-top: 55px
+    margin-bottom: 25px
+    font-size: font-size-h2
+    color: #aaa
+
+    a
+        font-size: font-size-h2
+        color: #aaa
+
+        &:hover, &:active
+            color: color-primary
+
+        &.active
+            color: color-default
+
+            &:hover, &:active
+                color: color-default
+
+.adForPermanentAccount
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    margin-top: 100px
+    color: color-default
+    justify-content: space-around
+
+    @media mq-mobile
+        justify-content: flex-start
+        margin-top: 80px
+
+    .adBlock
+        flex: 0 0 auto
+        min-width: 250px
+        margin: 0 20px 30px 20px
+
+        h2
+            color: color-default
+            margin-bottom: 25px
+
+            a
+                font-size: font-size-h2
+                color: color-default
+                text-decoration: underline
+
+                &:hover, &:active
+                    color: color-primary
+
+        ul
+            list-style: none
+            padding-left: 20px
+
+            li
+                margin-bottom: 10px
+
+                i.anticon
+                    margin-right: 5px
+                    color: color-primary
+
+        a.createAccountAdLInk
+            display: block
+            font-family: font-header
+            font-size: 22px
+            font-weight: 600
+            padding-left: 20px
+            
+
+
+
+

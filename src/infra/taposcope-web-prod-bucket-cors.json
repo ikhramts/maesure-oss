@@ -1,0 +1,12 @@
+[
+    {
+      "origin": [
+        "https://*.maesure.com",
+        "https://maesure.com",
+        "https://maesure.auth0.com"
+        ],
+      "responseHeader": ["Content-Type"],
+      "method": ["GET", "HEAD"],
+      "maxAgeSeconds": 3600
+    }
+]

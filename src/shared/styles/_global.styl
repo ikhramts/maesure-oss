@@ -1,0 +1,75 @@
+// General global styles styles
+* 
+  font: font-sans
+  font-size: font-size
+
+html
+  font-size: 12pt
+  text-rendering: optimizeLegibility
+
+h1, h2, h3
+  font-family: font-header
+  text-rendering: geometricPrecision
+  letter-spacing: -0.01em
+  font-weight: 600
+
+h1
+  font-size: 23pt
+
+h2
+  margin-top: 30px
+  font-size: 18pt
+
+h3
+  margin-top: 20px
+  font-size: 14pt
+
+.error
+  color: color-error
+
+.success
+  color: color-green-bg
+
+// =================== Danger ================
+
+a
+  &.danger
+    color: color-danger
+
+    &:hover
+      color: lighten(color-danger, 30%)
+
+  &.disabled
+    color: color-fontgray
+    cursor: not-allowed
+
+    &:hover, &:active
+      color: color-fontgray
+
+  &.lowKey
+    color: color-fontgray
+
+    &:hover, &:active
+      color: color-primary
+
+    &.danger
+      color: color-fontgray
+
+      &:hover, &:active
+        color: color-danger
+
+span
+  .disabled
+    color: color-fontgray
+
+
+// =================== Common elements ================
+
+span.inlineDivider
+  display: inline-block
+  margin: 0 1em
+  font-size: inherit
+
+// =================== Utils / helpers ================
+img.preloadImage
+  display: none

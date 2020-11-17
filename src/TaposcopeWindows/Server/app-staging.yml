@@ -1,0 +1,34 @@
+﻿runtime: aspnetcore
+env: flex
+service: staging
+
+beta_settings:
+  cloud_sql_instances: "taposcope-prod:us-central1:taposcope-prod=tcp:5432"
+
+automatic_scaling:
+  min_num_instances: 1
+  max_num_instances: 2
+
+liveness_check:
+  path: "/api/health"
+  check_interval_sec: 30
+  timeout_sec: 4
+  failure_threshold: 2
+  success_threshold: 1
+
+readiness_check:
+  path: "/api/health"
+  check_interval_sec: 15
+  timeout_sec: 4
+  failure_threshold: 10
+  success_threshold: 1
+  app_start_timeout_sec: 300
+
+resources:
+  cpu: 1
+  memory_gb: 1
+  disk_size_gb: 10
+
+env_variables:
+  POSTGRES_CONNECTION: "Uid=svc_taposcope;Pwd=lgUqHgUgBk77;Host=35.193.92.33;Database=postgres;SSL Mode=Require;Trust Server Certificate=true"
+  ASPNETCORE_ENVIRONMENT: staging

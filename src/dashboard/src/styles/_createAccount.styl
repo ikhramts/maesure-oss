@@ -1,0 +1,138 @@
+.wizardForm
+    width: 275px
+    margin: 20vh auto 0 auto
+
+    button, .button
+        margin-top: 10px
+        padding: 9px 15px
+        border: 0 solid #cccccc
+        background: color-grey
+        border-radius: 5px
+        font-size: 17px
+        color: #fff
+        font-family: font-header
+        font-weight: 600
+        text-decoration: none
+        cursor: pointer
+
+        &:hover, &:active
+            background: darken(color-primary, 10%)
+        
+        &:disabled
+            background: color-grey
+
+            &:hover
+                background: color-grey
+
+    .btn-primary
+        background: color-primary
+
+    .btn-default
+        background: color-grey
+
+    .formGroup
+        margin-bottom: 20px
+
+        input[type=text], input[type=password], input[type=email]
+            width: 253px;
+            margin-top: 10px
+            padding: 7px
+            width: 280px
+            border: 2px solid #cccccc
+            border-radius: 5px
+            font-size: 17px
+            color: color-default
+
+            &.validation-failed
+                border: 2px solid color-error
+
+            &.validation-succeeded
+                border 2px solid color-success
+
+        input[type=checkbox]
+            margin-right: 5px
+
+        p.validation
+                margin-top: 0
+
+                &.terms-and-conditions
+                    margin-top: 10px
+
+                &.processing
+                    color: color-primary
+
+                &.success
+                    color: color-success
+
+                &.error
+                    color: color-error
+
+                    a
+                        color: color-error
+                        text-decoration: underline
+            
+            &.validation-error
+                input[type=text], input[type=email], input[type=password]
+                    border-color: color-error
+
+                p.validation.error
+                    display: block
+
+            &.validation-processing
+                p.validation.processing
+                    display: block
+
+            &.validation-success
+                p.validation.success
+                    display: block
+
+    button
+        display: block
+        margin-left: auto
+        margin-right: auto
+
+    h2
+        text-align: center
+        margin-bottom: 50px
+
+    .horizontalLine
+        width: 100%; 
+        text-align: center; 
+        border-bottom: 2px solid #cccccc; 
+        line-height: 0.1em;
+        margin: 40px 0 25px 0;
+
+        span
+            padding:0 10px;
+            background: #fff
+            color: color-grey
+
+    .textAlignCenter
+        text-align: center
+
+    a.button
+        color: white
+        
+        &:hover, &:active
+            text-decoration: none
+
+    .form-show-default
+        display: inherit
+
+    .formResult
+        margin-top: 15px
+  
+#reset-password-form
+    margin-top: 10vh
+
+#btn-google
+    background: #cc2727
+    
+    &:hover, &:active
+        background: lighten(#cc2727, 10%)
+
+#sign-up-confirm-tc-group-google
+    margin-top: 40px
+
+
+    

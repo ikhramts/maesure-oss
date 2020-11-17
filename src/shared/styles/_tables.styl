@@ -1,0 +1,44 @@
+table
+  border-collapse: collapse
+  vertical-align: middle
+
+thead
+  background: color-grey-bg
+
+  tr
+    border-top: none
+    border-bottom: 1px solid color-border
+
+  th
+    font-weight: normal
+    padding: 7px 0
+
+    &.isDraggedOver
+      background: color-grey
+
+tr
+
+  &.topLevel
+    border-top: 1px solid color-border
+
+  &.sectionHeader
+    td
+      height: 50px
+      padding-bottom: 10px
+      vertical-align: bottom
+
+td
+  .cellContents
+    min-height: 35px
+    padding: 5px 0
+
+  .zero
+    color: color-border
+
+// Row of inputs on top of the table
+.inputRow
+  margin-bottom: 15px
+
+  .anticon
+    margin-left: 15px
+

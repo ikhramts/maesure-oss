@@ -1,0 +1,190 @@
+// ---------- Body -------------
+body
+  width: 100%
+  min-height: 100vh
+  margin: 0
+  padding: 0
+  background: color-background
+  color: color-default
+  font: font-size font-sans
+  -webkit-text-size-adjust: 100%
+  overflow-y: scroll
+
+#root
+  width: 100%
+  min-height: 100vh
+
+.everything
+  width: 100%
+  min-height: 100vh
+
+  .ant-layout.ant-layout-has-sider
+    max-width: body-max-width
+    min-height: 60vh
+    margin: 0 auto
+    padding: 0 side-padding
+
+// ---------- Header -------------
+.headerWrap
+  width: 100%
+
+.header
+  display: flex
+  max-width: body-max-width + 2*side-padding
+  margin: 0 auto 30px auto
+  padding: side-padding
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: center
+
+  @media mq-mobile
+    margin-bottom: 20px
+
+.shuttingDownBanner
+  text-align: center
+  padding: 20px auto
+  background: #fcc8c7
+
+.headerTitle
+  flex: 0 0 auto
+  width: 157px
+  padding: 10px 0 0 0
+  text-align: center
+  margin-right: auto
+
+  @media mq-mobile
+    width: 100%
+
+  .logo
+    display: block
+    width: 157px
+    height: 30px
+    margin: 0 auto
+
+    img
+      width: 100%
+      height: 100%
+
+.headerNav
+  flex: 0 0 auto
+
+  @media mq-mobile
+    width: 100%
+    text-align: center
+
+.mainNav
+  margin-left: -15px
+  text-align: center
+
+  a.ant-dropdown-link
+    color: color-default
+    font-family: font-header
+    font-size: 17px
+    text-decoration: none
+    display: inline-block
+    font-weight: 600
+    padding: 10px 0 10px 15px
+
+a.headerNavLink
+  color: color-default
+  font-family: font-header
+  font-size: 17px
+  text-decoration: none
+  display: inline-block
+  font-weight: 600
+  padding: 14px 15px 10px 15px
+
+  &.active
+    text-decoration: underline
+
+  &:last-child
+    padding-right: 0
+
+  &.highlight
+    // background: color-primary
+    // color: white
+    // border-radius: 3px
+    color: color-primary
+    
+    &:active, &:hover
+      //color: darken(color-primary, 20%)
+      //background: darken(color-primary, 10%)
+
+// ---------- Account dropdown -------------
+.mainNav
+  .ant-dropdown-link
+    position: relative
+    top: -1px          // better alignment with other menu items
+    margin-right: -1px // better alignment with TimeTrackerWidget
+
+    .userEmail
+      display: inline
+      color: color-default
+
+      @media mq-mobile
+        display: none
+
+    i.anticon-down
+      display: inline-block
+      position: relative
+      top: 2px
+      color: color-default
+
+.ant-dropdown-menu-item
+  transition: none
+
+  a
+    transition: none
+
+    i.anticon
+      margin-right: 4px
+
+  &:hover
+    transition: none
+
+    a
+      background: color-primary
+      color: white
+      transition: none
+
+  &.menuHeader
+    font-size: font-size
+
+    &:hover
+      background: color-background
+      cursor: default
+
+  .smallFont
+    font-size: 9pt
+
+// ---------- Content -------------
+.pageWrap
+  width: 100%
+
+.page
+  max-width: body-max-width + 2*side-padding
+  margin: 0 auto
+  min-height: 65vh
+  padding: side-padding
+
+.mostlyText
+  max-width: body-max-width + side-padding*2
+  margin: 0 auto
+
+  li
+    margin-bottom: 10px
+
+// ---------- Footer -------------
+.footer
+  margin: 150px auto 10px auto
+  padding: 0 side-padding
+  color: color-grey
+  text-align: center
+
+  a
+    color: color-grey
+    text-decoration: underline
+    
+    &:hover, &:active
+      color: darken(color-grey, 30%)

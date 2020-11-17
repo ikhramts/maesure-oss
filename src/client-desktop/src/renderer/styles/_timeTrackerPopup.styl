@@ -1,0 +1,44 @@
+.timeTrackerPopup
+    width: 100vw
+    height: 100vh
+    -webkit-app-region: drag
+    border: 1px solid #888
+    overflow: hidden
+
+    .timeTrackerWidget
+        width: 100%
+        min-height: 100%
+        max-width: 20000px
+        margin: 0
+        overflow: hidden
+        border: none
+
+        p, span, h1, a, button, input
+            -webkit-app-region: no-drag
+
+        p
+            display: inline-block
+
+        .waitingPlaceholder
+            margin-top: 135px
+
+        .timeLogEntryTable
+            margin-right: 10px
+
+            .controls
+                width: 55px
+                padding-right: 10px
+
+    .connectionStateDialog
+        width: 500px
+        padding: 40px 40px 0 40px
+        text-align: center
+
+        .closeButton
+            position: absolute
+            top: 120px
+            left: 215px
+
+div.ant-select-dropdown
+    -webkit-app-region: no-drag
+

@@ -1,0 +1,95 @@
+// =========== General forms =============
+.formRow
+  margin: 30px 0
+
+  label
+    display: inline-block
+    width: 250px
+    text-align: right
+    padding-right: 25px
+
+    @media mq-mobile 
+      display: block
+      text-align: left
+      margin-bottom: 7px
+
+  .formError
+    margin-top: 5px
+    margin-left: 250px
+    color: color-error
+
+    @media mq-mobile 
+      margin-left: 0
+
+.submitRow
+  margin: 30px 0 10px 0
+  padding-left: 250px
+
+  @media mq-mobile 
+    padding-left: 0
+    text-align: center
+
+button
+  margin-right: 20px
+
+  &.medium
+    width: 80px
+
+// =========== Special elements =============
+.timeInput
+  padding-top: 3px
+
+  &.error
+    border-color: color-error
+
+// =========== Antd input fixes =============
+.ant-input
+  color: color-default
+  font-size: font-size
+
+button.ant-btn
+  padding-bottom: 3px
+
+a.ant-btn
+  span
+    line-height: 28px
+
+a.ant-btn-lg
+  height: 42px
+
+// Date/Time pickers in tables
+.ant-time-picker
+  width: 80px
+  color: color-default
+  font-size: font-size
+
+  .ant-time-picker-input
+    color: color-default
+    font-size: font-size
+    line-height: 1.15
+    padding-top: 3px
+
+  &.error
+    .ant-time-picker-input
+      border-color: color-error
+
+.ant-calendar-picker
+  color: color-default
+  font-size: font-size
+
+  .ant-calendar-picker-input.ant-input
+    color: color-default
+    font-size: font-size
+    line-height: 1.15
+    padding-top: 3px
+
+  .ant-calendar-picker-icon
+    top: 47%
+
+  &.error
+    .ant-calendar-picker-input.ant-input
+      border-color: color-error
+
+// <select>-like dropdown
+.ant-select-selection-selected-value
+  line-height: 29px
